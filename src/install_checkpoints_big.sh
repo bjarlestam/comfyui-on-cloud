@@ -3,18 +3,6 @@
 mkdir -p ./models/clip/
 mkdir -p ./models/ipadapter/
 mkdir -p ./models/upscale_models/
-mkdir -p ./models/vae/
-mkdir -p ./models/unet/
-
-
-wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors -P ./models/clip/
-wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors -P ./models/clip/
-
-wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors -P ./models/vae/
-
-wget -c https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors -P ./models/unet/
-
-
 
 
 # #sd_xl and refiner
