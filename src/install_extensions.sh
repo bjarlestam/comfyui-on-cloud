@@ -4,6 +4,9 @@
 mkdir -p ./models/facerestore_models/
 
 
+# rgthree-comfy
+git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes/rgthree-comfy
+
 # ComfyUI-KJNodes
 git clone https://github.com/kijai/ComfyUI-KJNodes.git custom_nodes/ComfyUI-KJNodes
 pip install -r custom_nodes/ComfyUI-KJNodes/requirements.txt
