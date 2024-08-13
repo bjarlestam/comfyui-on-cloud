@@ -4,6 +4,10 @@
 mkdir -p ./models/facerestore_models/
 
 
+# ComfyUI-KJNodes
+git clone https://github.com/kijai/ComfyUI-KJNodes.git custom_nodes/ComfyUI-KJNodes
+pip install -r custom_nodes/ComfyUI-KJNodes/requirements.txt
+
 
 #COMFY MANAGER
 
