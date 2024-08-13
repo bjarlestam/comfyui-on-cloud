@@ -4,6 +4,9 @@
 mkdir -p ./models/facerestore_models/
 
 
+# pythongosssss/ComfyUI-Custom-Scripts
+git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git custom_nodes/ComfyUI-Custom-Scripts
+
 # rgthree-comfy
 git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes/rgthree-comfy
 
