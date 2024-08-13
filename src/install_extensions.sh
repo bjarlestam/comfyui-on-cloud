@@ -4,6 +4,10 @@
 mkdir -p ./models/facerestore_models/
 
 
+# ComfyUI-Crystools
+git clone https://github.com/crystian/ComfyUI-Crystools.git custom_nodes/ComfyUI-Crystools
+pip install -r custom_nodes/ComfyUI-Crystools/requirements.txt
+
 # pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git custom_nodes/ComfyUI-Custom-Scripts
 
