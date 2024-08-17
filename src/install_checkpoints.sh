@@ -9,11 +9,11 @@ mkdir -p ./models/unet/
 
 
 
-wget -c https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-dev-fp8.safetensors -P ./models/unet/
-wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/clip_l.safetensors -P ./models/clip/
-wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/t5xxl_fp8_e4m3fn.safetensors -P ./models/clip/
+wget -c https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors -P ./models/unet/
+wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors -P ./models/clip/
+wget -c https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors -P ./models/clip/
 
-wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors -P ./models/vae/
+wget -c https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors -P ./models/vae/
 
 
 
