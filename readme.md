@@ -35,6 +35,13 @@ Normally, a full month's usage of a T4 GPU with 6 VCPU cores, 16 GB RAM, and 100
 1. Create a GCP compute engine instance(VM) and Install the google CLI on your local machine(***details below***).
 2. Log in to your VM and execute the following commands:
 
+    Install git
+    ```bash
+    sudo apt-get update
+    sudo apt-get install git
+    sudo apt-get install git-lfs
+    ```
+
     ```bash
     git clone https://github.com/karaposu/comfyui-on-cloud
     chmod +x ./comfyui-on-cloud/src/install.sh
@@ -44,8 +51,18 @@ Normally, a full month's usage of a T4 GPU with 6 VCPU cores, 16 GB RAM, and 100
     source ~/.bashrc 
     ./comfyui-on-cloud/src/install.sh
     ```
-
     This will set up comfyUI, install popular extensions and model checkpoints, and include an automation script that automatically starts the comfyvm server whenever the VM is booted.
+
+    If your machine is not ubuntu, you need to install cuda manually:
+    ```bash
+    curl -L https://github.com/GoogleCloudPlatform/compute-gpu-installation/releases/download/cuda-installer-v1.1.0/cuda_installer.pyz --output cuda_installer.pyz
+    sudo python3 cuda_installer.pyz install_driver
+    sudo python3 cuda_installer.pyz install_cuda
+
+    #verify installation with
+    sudo python3 cuda_installer.pyz verify_cuda
+    ```
+    See https://cloud.google.com/compute/docs/gpus/install-drivers-gpu for more details on cuda installation
 
 
 ## How to Use?<a name="usage"></a>
